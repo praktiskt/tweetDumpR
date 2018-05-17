@@ -14,6 +14,7 @@ get_tweets_fast = function(username, pages = 1) {
     require(tidyr)
     require(tibble)
     require(rvest)
+    require(xml2)
   })
 
   org_pages = pages

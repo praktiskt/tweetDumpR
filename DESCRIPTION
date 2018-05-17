@@ -20,5 +20,6 @@ Imports:
     tibble, 
     rvest, 
     tidyr, 
-    data.table
+    data.table, 
+    xml2
 RoxygenNote: 6.0.1

@@ -14,6 +14,7 @@ get_tweets_full = function(username, pages = 1) {
     require(magrittr)
     require(tidyr)
     require(tibble)
+    require(xml2)
   })
 
   org_pages = pages
