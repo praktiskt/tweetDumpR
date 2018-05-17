@@ -1,5 +1,6 @@
 #' @title Twitter-data retrieval (full)
 #' @description This function grabs as much data as it can from Twitter. This is the full version of the function which parses tweets one by one to extract as much info as possible, including hashtags and image links. Column "origins" contains details about where the tweet comes from (i.e. retweet from other users, in chronological order). 
+#' @export
 #' @param username The name of the twitter follower you wish to lookup.
 #' @param pages The number of tweet pages you want to retrieve. About 20 tweets per page.
 #' @return Returns a tibble containing tweet-data for the specified used.

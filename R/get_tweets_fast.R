@@ -1,5 +1,6 @@
 #' @title Twitter-data retrieval (fast)
 #' @description This function grabs as much data as it can as quickly as it can. This is the fast version of the function which parses the entire tweet page in one go. We are able to do this by ignoring uncertain bits of a tweet. This means skipping things like hashtag extraction, image url extraction and retweet-history.
+#' @export
 #' @param username The name of the twitter follower you wish to lookup.
 #' @param pages The number of tweet pages you want to retrieve. About 20 tweets per page.
 #' @return Returns a tibble containing tweet-data for the specified used.
