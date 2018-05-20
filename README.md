@@ -18,7 +18,7 @@ Using devtools, simply run the following:
 There are three functions in this package.
 
 `get_user_metadata(username = "hadleywickham")`
-* Get user metadata, including join date, screen name, number of followers, tweets and much more.
+* Get user metadata, including join date, screen name, number of followers, number of tweets and much more.
 
 `get_tweets_fast(username = "hadleywickham", pages = 5)`
 
