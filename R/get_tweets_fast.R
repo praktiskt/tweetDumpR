@@ -24,7 +24,7 @@ get_tweets_fast = function(username, pages = 1) {
   dataset = list()
 
   # Url to target.
-  url = stringr::str_interp('https://twitter.com/i/profiles/show/${username}/timeline/tweets?include_available_features=1&include_entities=1&include_new_items_bar=true')
+  url = stringr::str_interp('https://twitter.com/i/profiles/show/${username}/timeline/tweets?include_available_features=1&include_entities=1&include_new_items_bar=true&lang=en')
 
   # Initial tweet collection (latest tweets)
   get = GET(
@@ -123,7 +123,7 @@ get_tweets_fast = function(username, pages = 1) {
       rawToChar() %>%
       jsonlite::fromJSON()
 
-    # If there's nothing more to return (usually if we hit the 40 page limit).
+    # Check if there's more to get. 
     if(get$has_more_items){
      tweets = get %>%
         extract2("items_html") %>%

@@ -7,7 +7,7 @@ Maintainer: Magnus Furugård <magnus.furugard@gmail.com>
 URL: https://github.com/magnusfurugard/tweetDumpR
 BugReports: https://github.com/magnusfurugard/tweetDumpR/issues
 Description: This packages uses the Twitter frontent-API to retrieve user tweets nearly limitless. It has no limitations of requests per time-window, but it throttles at about ~800 tweets for a single user. Based heavily on the following Python package: https://github.com/kennethreitz/twitter-scraper/. 
-Depends: R (>= 3.4.2)
+Depends: R (>= 3.4.0)
 License: MIT
 Encoding: UTF-8
 LazyData: true
